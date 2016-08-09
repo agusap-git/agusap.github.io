@@ -14,7 +14,11 @@ export class DashboardLayoutComponent implements OnInit {
   @Input() pageTitle: String;
   @Input() pageSubtitle: String;
 
-  constructor(private _router : Router, private _auth : Auth ) {}
+  loggedIn : boolean;
+
+  constructor(private _router : Router, private _auth : Auth ) {
+    this.loggedIn = this._auth.authenticated();
+  }
 
   ngOnInit() {
   }

@@ -1,10 +1,8 @@
-<!-- template -->
-
 <!-- /#wrapper -->
 <div class="wrapper">
 
   <!-- Main Header -->
-  <header class="main-header">
+  <header *ngIf="loggedIn" class="main-header">
     <!-- Logo -->
     <a [routerLink]="['home']" class="logo">
       <!-- mini logo for sidebar mini 50x50 pixels -->
@@ -81,7 +79,7 @@
     </nav>
   </header>
   <!-- Left side column. contains the logo and sidebar -->
-  <aside class="main-sidebar">
+  <aside *ngIf="loggedIn" class="main-sidebar">
 
     <!-- sidebar: style can be found in sidebar.less -->
     <section class="sidebar">
@@ -157,7 +155,7 @@
   <!-- /.content-wrapper -->
 
   <!-- Main Footer -->
-  <footer class="main-footer">
+  <footer *ngIf="loggedIn" class="main-footer">
     <!-- To the right -->
     <div class="pull-right hidden-xs">
       IBM Services

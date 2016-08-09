@@ -20,12 +20,14 @@ export class Auth {
 
     if (result && result.idToken) {
 
+      localStorage.setItem('id_token', result.idToken);
+
       this.auth0.getProfile(result.idToken, function (err, profile) {
-        localStorage.setItem('id_token', result.idToken);
         localStorage.setItem('profile', JSON.stringify(profile));
       });
 
       this._router.navigate(['home']);
+
     } else if (result && result.error) {
       alert('error: ' + result.error);
     }
