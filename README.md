@@ -1,4 +1,6 @@
-# Angular2Dashboard
+# Angular2 Dashboard
+
+This project adds Auth0 security and the new Router guard approach, ChartJS directives, etc...
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.10.
 
