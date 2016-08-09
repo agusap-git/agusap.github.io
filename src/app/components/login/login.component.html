@@ -1,0 +1,23 @@
+<!-- template -->
+<div class="login-box">
+  <div class="login-logo">
+    <b>WFS</b> Login
+  </div>
+  <div class="login-box-body">
+    <p class="login-box-msg">Sign in to start your session</p>
+
+    <!-- On form submit, we call the Login event with the username and the password from the inputs -->
+    <form>
+      <fieldset>
+        <div class="form-group">
+          <input id="cntrlUsername" #username class="form-control" placeholder="Username" name="username" type="text" autofocus  maxlength="20">
+        </div>
+        <div class="form-group">
+          <input  id="cntrlPassword" #password class="form-control" placeholder="Password" name="password" type="password" value="" maxlength="20">
+        </div>
+        <button  id="cntrlsubmit" type="submit" class="btn btn-lg btn-success btn-block" (click)="_auth.login(username.value, password.value);">Login</button>
+      </fieldset>
+    </form>
+  </div>
+  <!-- /.login-box-body -->
+</div>

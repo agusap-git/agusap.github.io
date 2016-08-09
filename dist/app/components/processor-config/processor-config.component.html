@@ -1,0 +1,43 @@
+<div class="row">
+  <div class="col-md-6 well">
+    <!-- TEST FORM -->
+    <div class="box box-primary">
+      <div class="box-header">
+        <h3 class="box-title">Processor list</h3>
+      </div>
+      <!-- /.box-header -->
+      <div class="box-body">
+        <table id="example1" class="table table-bordered table-striped">
+          <thead>
+          <tr>
+            <th>Processor Name</th>
+            <th>Real Time Process</th>
+            <th>Dev Contact</th>
+            <th>Business Contact</th>
+            <th>Date Creation</th>
+          </tr>
+          </thead>
+          <tbody>
+          <tr>
+            <td>Eng1</td>
+            <td>YES</td>
+            <td>armando@wfs.com</td>
+            <td>mario@wfscorp.com</td>
+            <td>07/07/2015</td>
+          </tr>
+          </tbody>
+        </table>
+      </div>
+      <!-- /.box-body -->
+      <div class="box-footer">
+        <button type="button" (click)="onAdd()" class="btn btn-default">Add</button>
+        <button type="button" (click)="onUpdate()" class="btn btn-default">Update</button>
+        <button type="button" (click)="onDelete()" class="btn btn-default">Delete</button>
+        <button type="button" (click)="onReturn()" class="btn btn-info pull-right">Return</button>
+      </div>
+      <!-- /.box-footer -->
+    </div>
+    <!-- /.box -->
+  </div>
+  <!-- /.col -->
+</div>
