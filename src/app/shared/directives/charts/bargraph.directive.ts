@@ -20,45 +20,36 @@ export class BarGraphDirective implements AfterViewInit{
     var ctx = canvas.getContext('2d');
 
     var _data = {
-      labels: ["01-01",
-        "01-04",
-        "01-15",
-        "02-03",
-        "03-25",
-        "04-03",
-        "04-14",
-        "05-27",
-        "08-03"],
+      labels: ["Sent", "Received", "WEB", "FTP"],
       datasets: [{
-        data: [5, 13, 23, 20, 5, 13, 23, 130, 2],
-        label: "male",
-        borderColor: "r#00a65a",
-        backgroundColor: "#00a65a",
-        hoverBackgroundColor: "rgba(197,23,1,1)",
-        borderWidth: 1,
-        pointBorderColor: "rgba(197,23,1,1)",
-        pointBackgroundColor: "rgba(255,255,255,0.8)",
-        pointBorderWidth: 1.5,
-        yAxisID: "y-axis-1",
-      }, ],
+        label: "data",
+        backgroundColor: "#36A2EB",
+        data: [70, 50, 45, 100]
+      }]
     };
 
     var _options = {
-      scales: {
-        xAxes: [{
-          categorySpacing: 0
-        }],
-        yAxes: [{
-          type: "linear",
-          display: true,
-          position: "left",
-          id: "y-axis-1",
-        }]
+      // Elements options apply to all of the options unless overridden in a dataset
+      // In this case, we are setting the border of each horizontal bar to be 2px wide and green
+      elements: {
+        rectangle: {
+          borderWidth: 2,
+//          borderColor: 'rgb(0, 255, 0)',
+          borderSkipped: 'left'
+        }
+      },
+      responsive: true,
+      legend: {
+        position: 'right',
+      },
+      title: {
+        display: true,
+        text: 'Document Transmission'
       }
     };
 
     var config = {
-      type: 'line',
+      type: 'horizontalBar',
       data: _data,
       options: _options
     }

@@ -10,6 +10,8 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var core_1 = require('@angular/core');
 var bargraph_directive_1 = require("../../shared/directives/charts/bargraph.directive");
+var piegraph_directive_1 = require("../../shared/directives/charts/piegraph.directive");
+var doughnutgraph_directive_1 = require("../../shared/directives/charts/doughnutgraph.directive");
 var HomeComponent = (function () {
     function HomeComponent() {
     }
@@ -21,7 +23,7 @@ var HomeComponent = (function () {
             selector: 'app-home',
             templateUrl: 'home.component.html',
             styles: [],
-            directives: [bargraph_directive_1.BarGraphDirective]
+            directives: [bargraph_directive_1.BarGraphDirective, piegraph_directive_1.PiegraphDirective, doughnutgraph_directive_1.DoughnutgraphDirective]
         }), 
         __metadata('design:paramtypes', [])
     ], HomeComponent);
