@@ -1,0 +1,1 @@
+{"version":3,"file":"index.js","sourceRoot":"","sources":["../../../home/aaltamir/work/angular2/angular2-dashboard/tmp/broccoli_type_script_compiler-input_base_path-dIyzhjZn.tmp/0/src/app/components/dashboard-layout/index.ts"],"names":[],"mappings":";;;;AAAA,iBAAc,8BAA8B,CAAC,EAAA","sourcesContent":["export * from './dashboard-layout.component';\n"]}
