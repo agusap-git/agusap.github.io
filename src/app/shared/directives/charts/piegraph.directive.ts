@@ -20,22 +20,25 @@ export class PiegraphDirective implements AfterViewInit{
 
     var _data = {
       labels: [
-        "Red",
-        "Blue",
-        "Yellow"
+        "Arrived",
+        "Rejected",
+        "In Progress",
+        "Processed"
       ],
       datasets: [
         {
-          data: [300, 50, 100],
+          data: [300, 50, 100, 200],
           backgroundColor: [
             "#FF6384",
             "#36A2EB",
-            "#FFCE56"
+            "#FFCE56",
+            "#FF7070"
           ],
           hoverBackgroundColor: [
             "#FF6384",
             "#36A2EB",
-            "#FFCE56"
+            "#FFCE56",
+            "#FF7070"
           ]
         }]
     };
@@ -43,8 +46,15 @@ export class PiegraphDirective implements AfterViewInit{
     var _options = {
       responsive: true,
       legend: {
+        position: 'right',
         display: true
       },
+/*
+      title: {
+        display: true,
+        text: 'Document Status'
+      }
+*/
     };
 
     var config = {

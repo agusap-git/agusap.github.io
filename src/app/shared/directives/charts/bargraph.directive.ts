@@ -40,12 +40,15 @@ export class BarGraphDirective implements AfterViewInit{
       },
       responsive: true,
       legend: {
-        position: 'right',
+//        position: 'right',
+        display: false
       },
+/*
       title: {
         display: true,
         text: 'Document Transmission'
       }
+*/
     };
 
     var config = {
