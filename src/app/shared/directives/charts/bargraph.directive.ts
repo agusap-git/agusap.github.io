@@ -22,33 +22,22 @@ export class BarGraphDirective implements AfterViewInit{
     var _data = {
       labels: ["Sent", "Received", "WEB", "FTP"],
       datasets: [{
-        label: "data",
         backgroundColor: "#36A2EB",
         data: [70, 50, 45, 100]
       }]
     };
 
     var _options = {
-      // Elements options apply to all of the options unless overridden in a dataset
-      // In this case, we are setting the border of each horizontal bar to be 2px wide and green
       elements: {
         rectangle: {
           borderWidth: 2,
-//          borderColor: 'rgb(0, 255, 0)',
           borderSkipped: 'left'
         }
       },
       responsive: true,
       legend: {
-//        position: 'right',
         display: false
       },
-/*
-      title: {
-        display: true,
-        text: 'Document Transmission'
-      }
-*/
     };
 
     var config = {
@@ -58,8 +47,5 @@ export class BarGraphDirective implements AfterViewInit{
     }
 
     this.myChart = new Chart(ctx,  config);
-
-    console.log(ctx);
-    console.log(this.myChart);
   }
 }

@@ -49,12 +49,6 @@ export class PiegraphDirective implements AfterViewInit{
         position: 'right',
         display: true
       },
-/*
-      title: {
-        display: true,
-        text: 'Document Status'
-      }
-*/
     };
 
     var config = {
@@ -64,9 +58,6 @@ export class PiegraphDirective implements AfterViewInit{
     }
 
     this.myChart = new Chart(ctx,  config);
-
-    console.log(ctx);
-    console.log(this.myChart);
   }
 
 

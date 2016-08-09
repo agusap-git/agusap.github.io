@@ -58,9 +58,6 @@ export class DoughnutgraphDirective  implements AfterViewInit{
     }
 
     this.myChart = new Chart(ctx,  config);
-
-    console.log(ctx);
-    console.log(this.myChart);
   }
 
 }
