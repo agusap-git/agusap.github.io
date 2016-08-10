@@ -6576,7 +6576,7 @@ $.ui.plugin.add( "draggable", "connectToSortable", {
 				sortable._mouseStop(event);
 
 				// Once drag has ended, the sortable should return to using
-				// its original helper, not the shared helper from draggable
+				// its original helper, not the common helper from draggable
 				sortable.options.helper = sortable.options._helper;
 			} else {
 				// Prevent this Sortable from removing the helper.
@@ -8898,7 +8898,7 @@ var dialog = $.widget( "ui.dialog", {
 		if ( !this.document.data( "ui-dialog-overlays" ) ) {
 
 			// Prevent use of anchors and inputs
-			// Using _on() for an event handler shared across many instances is
+			// Using _on() for an event handler common across many instances is
 			// safe because the dialogs stack and must be closed in reverse order
 			this._on( this.document, {
 				focusin: function( event ) {

@@ -7,7 +7,7 @@ import {DocumentRoutes} from "./components/document-config/index";
 import {DocumentTypeRoutes} from "./components/document-type-config/index";
 import {ProcessorRoutes} from "./components/processor-config/index";
 import {TransmissionRoutes} from "./components/transmission-config/index";
-import {AuthGuard} from "./shared/guards/auth-guard";
+import {AuthGuard} from "./common/guards/auth-guard";
 
 
 export const routes: RouterConfig = [

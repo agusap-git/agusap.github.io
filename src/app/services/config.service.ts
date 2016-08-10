@@ -15,11 +15,11 @@ export class ConfigService {
 
   load() {
     return new Promise((resolve, reject) => {
-      this.http.get('app/shared/config/env.json')
+      this.http.get('app/common/config/env.json')
         .map(res => res.json())
         .subscribe((env_data) => {
           this._env = env_data;
-          this.http.get('app/shared/config/' + env_data.env + '.json')
+          this.http.get('app/common/config/' + env_data.env + '.json')
             .map(res => res.json())
             .catch((error: any) => {
               console.error(error);

@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { AuthHttp } from 'angular2-jwt';
 import { Observable } from 'rxjs/Observable';
-import '../shared/rxjs-operators';
+import '../common/rxjs-operators';
 
 @Injectable()
 export class DataService {

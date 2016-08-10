@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import {EmailValidator} from "../../shared/directives/validators/emailvalidator.directive";
+import {EmailValidator} from "../../common/directives/validators/emailvalidator.directive";
 import {ConfigService} from "../../services/config.service";
-import {BarGraphDirective} from "../../shared/directives/charts/bargraph.directive";
+import {BarGraphDirective} from "../../common/directives/charts/bargraph.directive";
 import {
   FORM_DIRECTIVES,
   REACTIVE_FORM_DIRECTIVES,

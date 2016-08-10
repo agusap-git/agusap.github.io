@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {BarGraphDirective} from "../../shared/directives/charts/bargraph.directive";
-import {PiegraphDirective} from "../../shared/directives/charts/piegraph.directive";
-import {DoughnutgraphDirective} from "../../shared/directives/charts/doughnutgraph.directive";
+import {BarGraphDirective} from "../../common/directives/charts/bargraph.directive";
+import {PiegraphDirective} from "../../common/directives/charts/piegraph.directive";
+import {DoughnutgraphDirective} from "../../common/directives/charts/doughnutgraph.directive";
 
 @Component({
   moduleId: module.id,

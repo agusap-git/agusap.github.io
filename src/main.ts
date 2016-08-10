@@ -5,7 +5,7 @@ import { disableDeprecatedForms, provideForms, FORM_PROVIDERS } from "@angular/f
 import { ConfigService } from "./app/services/config.service";
 import { HTTP_PROVIDERS } from "@angular/http";
 import { APP_ROUTER_PROVIDER } from "./app/app.routes";
-import { AuthGuard } from "./app/shared/guards/auth-guard";
+import { AuthGuard } from "./app/common/guards/auth-guard";
 import { DataService } from "./app/services/data.service";
 import {AUTH_PROVIDERS} from "angular2-jwt";
 

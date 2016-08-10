@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
-import {DatatableDirective} from "../../shared/directives/tables/datatable.directive";
+import {DatatableDirective} from "../../common/directives/tables/datatable.directive";
 
 @Component({
   moduleId: module.id,
