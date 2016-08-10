@@ -7,7 +7,7 @@ import {PageNotFoundComponent} from './not-found.component';
 
 describe('Component: NotFound', () => {
   it('should create an instance', () => {
-    let component = new PageNotFoundComponent();
+    let component = PageNotFoundComponent;
     expect(component).toBeTruthy();
   });
 });
