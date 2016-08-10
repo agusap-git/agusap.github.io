@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
+import {DatatableDirective} from "../../shared/directives/tables/datatable.directive";
 
 @Component({
   moduleId: module.id,
   selector: 'app-business-partners-config',
   templateUrl: 'business-partners-config.component.html',
-  styles: []
+  styles: [],
+  directives: [DatatableDirective]
 })
 export class BusinessPartnersConfigComponent implements OnInit {
 

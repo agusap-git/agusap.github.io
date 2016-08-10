@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
+import {DatatableDirective} from "../../shared/directives/tables/datatable.directive";
 
 @Component({
   moduleId: module.id,
   selector: 'app-transmission-config',
   templateUrl: 'transmission-config.component.html',
-  styles: []
+  styles: [],
+  directives: [DatatableDirective]
 })
 export class TransmissionConfigComponent implements OnInit {
 

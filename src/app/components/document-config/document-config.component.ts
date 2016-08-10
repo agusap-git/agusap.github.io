@@ -1,11 +1,13 @@
 import { Component, OnInit } from '@angular/core';
 import {Router} from "@angular/router";
+import {DatatableDirective} from "../../shared/directives/tables/datatable.directive";
 
 @Component({
   moduleId: module.id,
   selector: 'app-document-config',
   templateUrl: 'document-config.component.html',
-  styles: []
+  styles: [],
+  directives: [DatatableDirective]
 })
 export class DocumentConfigComponent implements OnInit {
 
