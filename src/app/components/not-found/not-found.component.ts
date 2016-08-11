@@ -3,7 +3,7 @@ import {ROUTER_DIRECTIVES, Router} from "@angular/router";
 
 @Component({
   selector: 'app-not-found',
-  templateUrl: 'not-found.component.html',
+  templateUrl: 'app/components/not-found/not-found.component.html',
   styles: [],
   directives: [ROUTER_DIRECTIVES],
 })

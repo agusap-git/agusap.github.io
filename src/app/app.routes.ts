@@ -1,6 +1,5 @@
 import {provideRouter, RouterConfig} from "@angular/router";
 import {LoginComponent} from "./components/login/login.component";
-import {PageNotFoundComponent} from "./components/not-found/not-found.component";
 import {HomeComponent} from "./components/home/home.component";
 import {BusinessPartnersRoutes} from "./components/business-partners-config/index";
 import {DocumentRoutes} from "./components/document-config/index";
@@ -8,6 +7,7 @@ import {DocumentTypeRoutes} from "./components/document-type-config/index";
 import {ProcessorRoutes} from "./components/processor-config/index";
 import {TransmissionRoutes} from "./components/transmission-config/index";
 import {AuthGuard} from "./common/guards/auth-guard";
+import {PageNotFoundComponent} from "./components/not-found/not-found.component";
 
 
 export const routes: RouterConfig = [
@@ -21,7 +21,7 @@ export const routes: RouterConfig = [
     ...TransmissionRoutes
   ], canActivate: [AuthGuard]},
   { path: '', pathMatch:'full', redirectTo: 'home', canActivate: [AuthGuard]},
-  { path: '**', component: PageNotFoundComponent }
+  { path: '**', component: PageNotFoundComponent}
 ];
 
 export const APP_ROUTER_PROVIDER = [
