@@ -54,8 +54,6 @@ const barrels: string[] = [
   'app/components/login',
   'app/components/not-found',
   'app/components/business-partner-form',
-  'app/test',
-  'app/prueba',
   /** @cli-barrel */
 ];
 

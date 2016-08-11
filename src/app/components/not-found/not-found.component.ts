@@ -2,8 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import {ROUTER_DIRECTIVES, Router} from "@angular/router";
 
 @Component({
+  moduleId: module.id,
   selector: 'app-not-found',
-  templateUrl: 'app/components/not-found/not-found.component.html',
+  templateUrl: 'not-found.component.html',
   styles: [],
   directives: [ROUTER_DIRECTIVES],
 })
